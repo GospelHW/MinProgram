@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/guide/guide",
+    "pages/index/index",
+    "pages/footprint/footprint",
+    "pages/night/night",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/ric.png",
+        "iconPath": "images/ric-hs.png",
+        "pagePath": "pages/guide/guide",
+        "text": "晨兴分享"
+      },
+      {
+        "selectedIconPath": "images/ric.png",
+        "iconPath": "images/ric-hs.png",
+        "pagePath": "pages/index/index",
+        "text": "晨兴亮光"
+      },
+      {
+        "selectedIconPath": "images/foots.png",
+        "iconPath": "images/foots-hs.png",
+        "pagePath": "pages/footprint/footprint",
+        "text": "一天足迹"
+      },
+      {
+        "selectedIconPath": "images/yw.png",
+        "iconPath": "images/yw-hs.png",
+        "pagePath": "pages/night/night",
+        "text": "从早到晚"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">Hi {{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="userinfo-avatar"> 
+         这你存放的不只是你每天的记录，因为这里不是为了让你记笔记。
+    </text>
+    <text class="userinfo-avatar"> 
+      这里存放的乃是你这一天真实的经历，可帮助更多人认识你所认识的。
+    </text>
+    <text class="userinfo-avatar"> 
+      如果你有宝贝在瓦器里，为什么不分享给别人呢？
+    </text>
+    <text class="userinfo-avatar"> 
+      如果我有，我会很乐意把我所有的分享出去。
+    </text>
+    <text class="userinfo-avatar"> 
+      只关注一件事，就是你里面的哪一位祂感受如何。
+    </text>
+    <text class="userinfo-avatar"> 
+      从外面的打岔中回来吧！
+    </text>
+    <p style="align:bottom">
+      <button open-type="getHumanLife"> 记录你一天中每一次的成功！ </button>
+    </p>
+  </view>
+</view>
